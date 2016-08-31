@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # directories
-SOURCE="ffmpeg-3.1.1"
+SOURCE="ffmpeg-dev"
 FAT="FFmpeg-iOS"
 
 SCRATCH="scratch"
@@ -13,8 +13,8 @@ THIN=`pwd`/"thin"
 
 #FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
 
-CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
-                 --disable-doc --enable-pic"
+CONFIGURE_FLAGS="--enable-cross-compile --enable-debug --disable-programs \
+                 --disable-doc --enable-pic --disable-videotoolbox --disable-audiotoolbox"
 
 if [ "$X264" ]
 then
