@@ -17,6 +17,12 @@ Tested with:
 
 ## Usage
 
+> Before build, make sure update submodule under ffmpeg-dev
+```
+$ git submodule init
+$ git submodule update
+```
+
 Use build-ffmpeg-tvos.sh for tvOS.
 
 * To build everything:
